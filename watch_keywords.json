@@ -1,0 +1,198 @@
+{
+  "_comment": "국제 항만동향 주간브리프 후보수집 설정. GitHub에서 주제별 검색어, 매체, 간행물 검색어를 편집하면 다음 수집 때 반영된다. 공개 검색 설정만 보관하며 계정정보나 메일 비밀번호는 넣지 않는다.",
+  "groups": [
+    {
+      "category": "항만 혼잡(Port congestion)",
+      "queries": [
+        "port congestion",
+        "container port congestion",
+        "port backlog",
+        "vessel berth waiting time"
+      ]
+    },
+    {
+      "category": "컨테이너 운임(Freight rates)",
+      "queries": [
+        "Drewry World Container Index",
+        "SCFI Shanghai freight rate",
+        "container spot rates",
+        "ocean freight rate surge"
+      ]
+    },
+    {
+      "category": "해상 병목·주요 운하(Chokepoints)",
+      "queries": [
+        "Red Sea shipping diversion",
+        "Strait of Hormuz tensions",
+        "Panama Canal draft restriction",
+        "Suez Canal transit"
+      ]
+    },
+    {
+      "category": "선사 선복·얼라이언스(Carriers·Fleet)",
+      "queries": [
+        "Alphaliner fleet capacity",
+        "MSC CMA CGM Maersk capacity",
+        "container shipping alliance",
+        "container newbuilding orderbook"
+      ]
+    },
+    {
+      "category": "해상 연결성(Maritime connectivity)",
+      "queries": [
+        "UNCTAD liner shipping connectivity index",
+        "Review of Maritime Transport",
+        "port connectivity index"
+      ]
+    },
+    {
+      "category": "스마트항만·자율운항(Smart port·Autonomous)",
+      "queries": [
+        "smart port automation",
+        "autonomous shipping vessel",
+        "automated container terminal",
+        "port digitalization"
+      ]
+    },
+    {
+      "category": "주요 항만청 동향(Port authorities)",
+      "queries": [
+        "Port of Rotterdam throughput",
+        "Singapore MPA port",
+        "Port of Shanghai throughput",
+        "Busan port transshipment"
+      ]
+    },
+    {
+      "category": "세계 거시경제·교역·산업",
+      "queries": [
+        "world GDP growth forecast",
+        "global trade outlook WTO",
+        "global manufacturing PMI",
+        "industrial production index",
+        "container trade volume forecast",
+        "IMF global growth"
+      ]
+    },
+    {
+      "category": "물동량·해상교역(Cargo volume·Seaborne trade)",
+      "queries": [
+        "global container throughput",
+        "port throughput growth",
+        "seaborne trade volume",
+        "dry bulk trade demand",
+        "TEU volume growth",
+        "container shipping demand outlook"
+      ]
+    },
+    {
+      "category": "친환경·해운 탈탄소(Green·Decarbonization)",
+      "queries": [
+        "shipping decarbonization",
+        "IMO greenhouse gas strategy",
+        "green shipping corridor",
+        "carbon intensity shipping",
+        "maritime net zero fuel"
+      ]
+    },
+    {
+      "category": "대체연료·벙커링(Alt-fuel bunkering·Hydrogen)",
+      "queries": [
+        "green methanol bunkering",
+        "ammonia bunkering",
+        "LNG bunkering port",
+        "hydrogen port",
+        "alternative marine fuel supply"
+      ]
+    }
+  ],
+  "media_sources": {
+    "_note": "각 매체 기사만 정밀 수집(site:도메인). World Cargo News는 공개 헤드라인만 — 유료 본문은 세리님이 직접 로그인 열람(봇에 계정정보 넣지 않음).",
+    "category": "주요 매체 헤드라인(Media sources)",
+    "sites": [
+      {
+        "name": "Lloyd's List",
+        "domain": "lloydslist.com"
+      },
+      {
+        "name": "S&P Global (JOC)",
+        "domain": "joc.com"
+      },
+      {
+        "name": "World Cargo News",
+        "domain": "worldcargonews.com"
+      },
+      {
+        "name": "The Maritime Executive",
+        "domain": "maritime-executive.com"
+      },
+      {
+        "name": "Port Technology International",
+        "domain": "porttechnology.org"
+      },
+      {
+        "name": "Seatrade Maritime",
+        "domain": "seatrade-maritime.com"
+      },
+      {
+        "name": "Splash247",
+        "domain": "splash247.com"
+      },
+      {
+        "name": "Singapore MPA",
+        "domain": "mpa.gov.sg"
+      },
+      {
+        "name": "Port of Rotterdam",
+        "domain": "portofrotterdam.com"
+      },
+      {
+        "name": "Port of Hamburg",
+        "domain": "hafen-hamburg.de"
+      },
+      {
+        "name": "Port of Antwerp-Bruges",
+        "domain": "portofantwerpbruges.com"
+      },
+      {
+        "name": "Port Klang Authority",
+        "domain": "pka.gov.my"
+      },
+      {
+        "name": "Port of Los Angeles",
+        "domain": "portoflosangeles.org"
+      },
+      {
+        "name": "Port of Long Beach",
+        "domain": "polb.com"
+      },
+      {
+        "name": "Ministry of Transport of China",
+        "domain": "mot.gov.cn"
+      },
+      {
+        "name": "SIPG (Shanghai Port)",
+        "domain": "portshanghai.com.cn"
+      }
+    ]
+  },
+  "publications": {
+    "_note": "정기 간행물·리포트 신간/보도자료 감지용 정확매칭 쿼리. 발행기관 붙여 노이즈 억제. ISL Position Paper·S&P Seaborne Trade Monitor는 유료라 본문 불가 — 발간/보도자료 소식만 잡히면 다행, 안 잡히면 빼도 됨. 발행처: UNCTAD/ISL/S&P/Clarksons/IMF/World Bank/OECD.",
+    "category": "정기 간행물·리포트 신간(Publications)",
+    "queries": [
+      "\"Week in Charts\" Clarksons",
+      "\"Container Intelligence Monthly\"",
+      "\"Seaborne Trade Monitor\" Clarksons",
+      "ISL \"Position Paper\" shipping",
+      "\"Shipping Statistics and Market Review\" ISL",
+      "\"Maritime and Trade\" \"S&P Global\"",
+      "UNCTAD \"Data Insights\" maritime transport",
+      "UNCTAD \"In Focus\"",
+      "UNCTAD \"Global Trade Update\"",
+      "\"World Economic Outlook\" IMF",
+      "\"Global Economic Prospects\" World Bank",
+      "\"OECD Economic Outlook\"",
+      "OECD \"Data Insights\""
+    ]
+  }
+}
